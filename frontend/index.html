@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width,
+                   initial-scale=1.0">
+    <meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+    <title>
+        India Weather Dashboard
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+<link
+rel="stylesheet"
+href="https://unpkg.com/leaflet/dist/leaflet.css"
+/>
+
+<script
+src="https://unpkg.com/leaflet/dist/leaflet.js">
+</script>
+</head>
+
+<body>
+
+    <!-- Main Container -->
+    <div class="container">
+       
+
+</div>
+
+        <!-- App Heading -->
+        <h1>
+            🌦️ India Weather Dashboard
+        </h1>
+        <button id="darkModeBtn">
+
+    🌙 Dark Mode
+
+</button>
+
+        <!-- Search Section -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="cityInput"
+                placeholder="Enter city name">
+
+            <button
+class="search-btn"
+onclick="searchWeather()">
+
+    Search
+
+</button>
+<button
+class="location-btn"
+onclick="getCurrentLocationWeather()">
+
+📍 Use My Location
+
+</button>
+<div id="loader" class="loader"></div>
+            <div class="city-buttons">
+
+<button onclick="getWeather('Mumbai')">Mumbai</button>
+<button onclick="getWeather('Delhi')">Delhi</button>
+<button onclick="getWeather('Pune')">Pune</button>
+<button onclick="getWeather('Nagpur')">Nagpur</button>
+<button onclick="getWeather('Bangalore')">Bangalore</button>
+<button onclick="getWeather('Hyderabad')">Hyderabad</button>
+<button onclick="getWeather('Chennai')">Chennai</button>
+<button onclick="getWeather('Kolkata')">Kolkata</button>
+<button onclick="getWeather('Ahmedabad')">Ahmedabad</button>
+<button onclick="getWeather('Jaipur')">Jaipur</button>
+<button onclick="getWeather('Lucknow')">Lucknow</button>
+<button onclick="getWeather('Bhopal')">Bhopal</button>
+<button onclick="getWeather('Patna')">Patna</button>
+<button onclick="getWeather('Surat')">Surat</button>
+<button onclick="getWeather('Indore')">Indore</button>
+<button onclick="getWeather('Thane')">Thane</button>
+<button onclick="getWeather('Visakhapatnam')">Visakhapatnam</button>
+<button onclick="getWeather('Vadodara')">Vadodara</button>
+<button onclick="getWeather('Goa')">Goa</button>
+<button onclick="getWeather('Kochi')">Kochi</button>
+<button onclick="getWeather('Shimla')">Shimla</button>
+<button onclick="getWeather('Srinagar')">Srinagar</button>
+<button onclick="getWeather('Guwahati')">Guwahati</button>
+<button onclick="getWeather('Ranchi')">Ranchi</button>
+<button onclick="getWeather('Raipur')">Raipur</button>
+
+</div>
+
+        </div>
+
+        <!-- Weather Cards Container -->
+     <div id="loading">
+
+    Loading Weather Data...
+
+</div>
+
+<div id="weatherContainer">
+ 
+</div>
+<div class="sun-card">
+
+    <div class="sunrise">
+
+        <h3>🌅 Sunrise</h3>
+
+        <p id="sunriseTime">--:--</p>
+
+    </div>
+
+    <div class="sunset">
+
+        <h3>🌇 Sunset</h3>
+
+        <p id="sunsetTime">--:--</p>
+
+    </div>
+
+</div>
+<div class="map-section">
+
+    <h2>Live Weather Map</h2>
+
+    <div id="map"></div>
+<div id="map"></div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
