@@ -412,7 +412,7 @@ async function getCurrentLocationWeather(){
             const response =
             await fetch(
 
-`https://weather-dashboard-9140.onrender.com/api/weather-by-coordinates?lat=${lat}&lon=${lon}`
+`https://weather-dashboard-9l40.onrender.com/api/weather-by-coordinates?lat=${lat}&lon=${lon}`
 
             );
 
