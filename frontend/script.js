@@ -15,7 +15,7 @@ document.getElementById("loader")
     try {
 
         const url =
-        `http://localhost:8080/api/weather?city=${city}`;
+        `https://weather-dashboard-9l40.onrender.com/api/weather?city=${city}`;
 
         const response =
         await fetch(url);
@@ -24,7 +24,7 @@ document.getElementById("loader")
         await response.json();
 
         const forecastUrl =
-        `http://localhost:8080/api/forecast?city=${city}`;
+        `https://weather-dashboard-9l40.onrender.com/api/forecast?city=${city}`;
 
         const forecastResponse =
         await fetch(forecastUrl);
@@ -33,7 +33,7 @@ document.getElementById("loader")
 await forecastResponse.json();
 
 const aqiUrl =
-`http://localhost:8080/api/aqi?lat=${data.coord.lat}&lon=${data.coord.lon}`;
+`https://weather-dashboard-9l40.onrender.com/api/aqi?lat=${data.coord.lat}&lon=${data.coord.lon}`;
 
 const aqiResponse =
 await fetch(aqiUrl);
@@ -315,7 +315,7 @@ function getCurrentLocationWeather(){
             const lon = position.coords.longitude;
 
             const url =
-            `http://localhost:8080/api/weather-by-coordinates?lat=${lat}&lon=${lon}`;
+            `https://weather-dashboard-9l40.onrender.com/api/weather-by-coordinates?lat=${lat}&lon=${lon}`;
 
             const response =
             await fetch(url);
@@ -412,7 +412,7 @@ async function getCurrentLocationWeather(){
             const response =
             await fetch(
 
-`http://localhost:8080/api/weather-by-coordinates?lat=${lat}&lon=${lon}`
+`http://weather-dashboard-9140.onrender.com/api/weather-by-coordinates?lat=${lat}&lon=${lon}`
 
             );
 
